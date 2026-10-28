@@ -33,7 +33,7 @@ Funciona para **sobrevivente e assassino**, com o jogo em **português ou inglê
 15. [Destaques (clipes)](#destaques-clipes)
 16. [Comandos do worker](#comandos-do-worker)
 17. [Segurança](#segurança)
-18. [Solução de problemas](#solução-de-problemas)
+18. [](#solução-de-problemas)
 19. [Limitações e próximos passos](#limitações-e-próximos-passos)
 
 ---
@@ -667,7 +667,7 @@ Cortar leva de 30 s a alguns minutos por partida, dependendo da CPU. O vídeo or
 | `password authentication failed` | Senha errada ou com caracteres especiais | Troque por uma senha só com letras e números ou faça URL-encode |
 | Navegador: *blocked by CORS policy* no `PUT` do vídeo | O proxy da hospedagem recusou um arquivo grande enviado de uma vez | Use o envio em pedaços (`&inicio=`) da função acima |
 | Navegador: CORS no `gerar-link` | Origem fora do `ALLOWED_ORIGINS` | Adicione o domínio do site, com `https://` e sem barra no fim |
-| Painel da Discloud: *Caminho inválido* na pasta `videos` | Pasta criada por versão antiga com `:` no nome | Reinicie o bot-mmr: a faxina apaga sozinha |
+| Painel da Discloud: *Caminho inválido* na pasta `videos` | Pasta criada por versão antiga com `:` no nome | Reinicie o bot-mmr: a pasta apaga sozinha |
 | Worker: `WORKER_TOKEN recusado pelo site` | Tokens diferentes nos dois `.env` | Use exatamente o mesmo valor |
 | Relatório chega, clipes não | Clipes ainda sendo cortados, ou ffmpeg ausente | Espere a linha `Destaques: N de N` no log; confira `APT=ffmpeg` |
 | Vídeo recusado por confiança baixa | HUD escondida, gravação cortada ou proporção diferente de 16:9 | Grave a tela inteira do jogo, com a HUD visível |
