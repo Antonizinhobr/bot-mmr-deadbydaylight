@@ -1,0 +1,142 @@
+[
+ {
+  "label": "recover",
+  "origem": "frames/p4/f_0045.jpg",
+  "bbox_xywh": [
+   860,
+   912,
+   51,
+   12
+  ]
+ },
+ {
+  "label": "unhook",
+  "origem": "frames/p6/f_0145.jpg",
+  "bbox_xywh": [
+   860,
+   912,
+   49,
+   12
+  ]
+ },
+ {
+  "label": "heal_self",
+  "origem": "frames/p5/f_0098.jpg",
+  "bbox_xywh": [
+   872,
+   912,
+   88,
+   13
+  ]
+ },
+ {
+  "label": "being_healed",
+  "origem": "frames/p4/f_0049.jpg",
+  "bbox_xywh": [
+   863,
+   905,
+   75,
+   21
+  ]
+ },
+ {
+  "label": "heal",
+  "origem": "frames/p4/f_0122.jpg",
+  "bbox_xywh": [
+   872,
+   912,
+   26,
+   12
+  ]
+ },
+ {
+  "label": "insert_tape",
+  "origem": "frames/p6/f_0103.jpg",
+  "bbox_xywh": [
+   860,
+   912,
+   71,
+   12
+  ]
+ },
+ {
+  "label": "repair_2",
+  "origem": "frames/p5/f_0123.jpg",
+  "bbox_xywh": [
+   867,
+   909,
+   34,
+   21
+  ]
+ },
+ {
+  "label": "repair",
+  "origem": "video2/frames/p12/f_0047.jpg",
+  "bbox_xywh": [
+   852,
+   900,
+   44,
+   12
+  ]
+ },
+ {
+  "label": "heal_2",
+  "origem": "video2/frames/p10/f_0038.jpg",
+  "bbox_xywh": [
+   852,
+   894,
+   29,
+   21
+  ]
+ },
+ {
+  "label": "wiggle",
+  "origem": "video2/frames/p10/f_0050.jpg",
+  "bbox_xywh": [
+   867,
+   900,
+   32,
+   12
+  ]
+ },
+ {
+  "label": "unlock",
+  "origem": "video2/frames/p12/f_0046.jpg",
+  "bbox_xywh": [
+   852,
+   897,
+   49,
+   15
+  ]
+ },
+ {
+  "label": "open_escape",
+  "origem": "video2/frames/p5/f_0051.jpg",
+  "bbox_xywh": [
+   852,
+   899,
+   81,
+   14
+  ]
+ },
+ {
+  "label": "heal_self_2",
+  "origem": "video2/frames/p11/f_0058.jpg",
+  "bbox_xywh": [
+   863,
+   897,
+   126,
+   17
+  ]
+ },
+ {
+  "label": "recover_3",
+  "origem": "video2/frames/p7/f_0015.jpg",
+  "bbox_xywh": [
+   852,
+   899,
+   55,
+   14
+  ]
+ }
+]

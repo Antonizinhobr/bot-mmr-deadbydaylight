@@ -1,0 +1,226 @@
+{
+ "assist": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 7,
+  "coerencia": 0.997
+ },
+ "bold": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 12,
+  "coerencia": 0.994
+ },
+ "broken": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.987
+ },
+ "chased": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 9,
+  "coerencia": 0.991
+ },
+ "conspicuous": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.999
+ },
+ "coop": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 8,
+  "coerencia": 0.99
+ },
+ "distraction": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 3,
+  "coerencia": 0.977
+ },
+ "elusive": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.996
+ },
+ "endurance": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 5,
+  "coerencia": 0.978
+ },
+ "escaped": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 7,
+  "coerencia": 0.987
+ },
+ "exhausted": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 3,
+  "coerencia": 0.982
+ },
+ "good_skill_check": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 5,
+  "coerencia": 0.993
+ },
+ "great_skill_check": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 8,
+  "coerencia": 0.997
+ },
+ "great_wiggle": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 4,
+  "coerencia": 0.984
+ },
+ "haste": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.995
+ },
+ "heal": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.998
+ },
+ "hook_rescue": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 6,
+  "coerencia": 0.99
+ },
+ "killer_stun": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.986
+ },
+ "oblivious": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.991
+ },
+ "pallet_drop": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 5,
+  "coerencia": 0.992
+ },
+ "protection": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 8,
+  "coerencia": 0.987
+ },
+ "recovery": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.998
+ },
+ "repairs": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 12,
+  "coerencia": 0.992
+ },
+ "reunited": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 4,
+  "coerencia": 0.991
+ },
+ "safe_hook_rescue": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 5,
+  "coerencia": 0.996
+ },
+ "vault": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 6,
+  "coerencia": 0.988
+ },
+ "do_it_yourself": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.996
+ },
+ "fully_mended": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.996
+ },
+ "good_wiggle": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 2,
+  "coerencia": 0.983
+ },
+ "killer_blind": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 1,
+  "coerencia": 1.0
+ },
+ "struggle": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_01",
+  "n": 1,
+  "coerencia": 1.0
+ },
+ "survived": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "surv_en_02",
+  "n": 1,
+  "coerencia": 1.0
+ }
+}

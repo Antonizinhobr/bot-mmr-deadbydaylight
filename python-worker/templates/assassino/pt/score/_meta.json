@@ -1,0 +1,254 @@
+{
+ "k_bleeding": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 11,
+  "coerencia": 0.958
+ },
+ "k_bleeding_2": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 6,
+  "coerencia": 0.98
+ },
+ "k_bloodlust": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 2,
+  "coerencia": 0.997
+ },
+ "k_bloodlust_2": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 1,
+  "coerencia": 1.0
+ },
+ "k_chase": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 20,
+  "coerencia": 0.97
+ },
+ "k_damage_generator": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 12,
+  "coerencia": 0.978
+ },
+ "k_damage_generator_2": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 4,
+  "coerencia": 0.985
+ },
+ "k_destruction": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 5,
+  "coerencia": 0.965
+ },
+ "k_entity_summoned": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 6,
+  "coerencia": 0.977
+ },
+ "k_flashlight_dodge": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 3,
+  "coerencia": 0.972
+ },
+ "k_hit": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 28,
+  "coerencia": 0.987
+ },
+ "k_hook": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 13,
+  "coerencia": 0.986
+ },
+ "k_hook_2": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 9,
+  "coerencia": 0.981
+ },
+ "k_hook_novo": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 6,
+  "coerencia": 0.988
+ },
+ "k_hook_novo_2": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 5,
+  "coerencia": 0.992
+ },
+ "k_kill": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 2,
+  "coerencia": 0.993
+ },
+ "k_sacrifice": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 3,
+  "coerencia": 0.988
+ },
+ "k_survivor_found": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 30,
+  "coerencia": 0.962
+ },
+ "k_survivor_found_2": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 30,
+  "coerencia": 0.961
+ },
+ "kp_chainsaw_hit": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 12,
+  "coerencia": 0.959
+ },
+ "kp_chainsaw_sprint": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 30,
+  "coerencia": 0.979
+ },
+ "kp_curve": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 18,
+  "coerencia": 0.967
+ },
+ "kp_detected_dispelled": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 4,
+  "coerencia": 0.929
+ },
+ "kp_dream_demon": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 28,
+  "coerencia": 0.976
+ },
+ "kp_dream_master": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 12,
+  "coerencia": 0.985
+ },
+ "kp_dream_pallet": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 1,
+  "coerencia": 1.0
+ },
+ "kp_dream_projection": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 12,
+  "coerencia": 0.967
+ },
+ "kp_dream_snare": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 23,
+  "coerencia": 0.983
+ },
+ "kp_dream_snare_hit": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 6,
+  "coerencia": 0.981
+ },
+ "kp_dream_stalker": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_02_freddy",
+  "n": 23,
+  "coerencia": 0.982
+ },
+ "kp_overdrive_hit": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 2,
+  "coerencia": 0.985
+ },
+ "kp_overheat": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_01_cannibal",
+  "n": 4,
+  "coerencia": 0.959
+ },
+ "kp_take_flight": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 21,
+  "coerencia": 0.95
+ },
+ "kp_use_cantrip": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 5,
+  "coerencia": 0.983
+ },
+ "kp_violent_caster": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "killer_pt_03",
+  "n": 12,
+  "coerencia": 0.977
+ },
+ "kp_spectral_smash": {
+  "escala": 1.4,
+  "idioma": "po",
+  "origem": "killer_pt_03",
+  "n": 4,
+  "coerencia": 0.919
+ }
+}

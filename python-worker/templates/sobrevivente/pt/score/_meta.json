@@ -1,0 +1,163 @@
+{
+ "assist": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 2,
+  "coerencia": 0.988
+ },
+ "basement_time": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 3,
+  "coerencia": 0.963
+ },
+ "bold": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 18,
+  "coerencia": 0.992
+ },
+ "chased": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 17,
+  "coerencia": 0.994
+ },
+ "close_call": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 2,
+  "coerencia": 0.964
+ },
+ "endurance": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 4,
+  "coerencia": 0.993
+ },
+ "escaped": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 11,
+  "coerencia": 0.994
+ },
+ "exhausted": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 2,
+  "coerencia": 0.996
+ },
+ "good_skill_check": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 6,
+  "coerencia": 0.973
+ },
+ "great_skill_check": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 6,
+  "coerencia": 0.994
+ },
+ "hook_rescue": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 2,
+  "coerencia": 0.964
+ },
+ "killer_stun": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 4,
+  "coerencia": 0.993
+ },
+ "pallet_drop": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 1,
+  "coerencia": 1.0
+ },
+ "repairs": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 3,
+  "coerencia": 0.998
+ },
+ "vault": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 8,
+  "coerencia": 0.994
+ },
+ "killer_blind": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 4,
+  "coerencia": 1.0
+ },
+ "distraction": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 6,
+  "coerencia": 1.0
+ },
+ "great_wiggle": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 5,
+  "coerencia": 1.0
+ },
+ "good_wiggle": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_01",
+  "n": 5,
+  "coerencia": 1.0
+ },
+ "coop": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_02",
+  "n": 2,
+  "coerencia": 0.859
+ },
+ "survived": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_02",
+  "n": 1,
+  "coerencia": 1.0
+ },
+ "fully_mended": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_02",
+  "n": 2,
+  "coerencia": 0.996
+ },
+ "hindered": {
+  "escala": 1.4,
+  "idioma": "pt",
+  "origem": "surv_pt_02",
+  "n": 2,
+  "coerencia": 0.996
+ }
+}

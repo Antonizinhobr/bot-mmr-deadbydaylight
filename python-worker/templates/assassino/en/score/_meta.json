@@ -1,0 +1,184 @@
+{
+ "k_bleeding": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_02_deathslinger_p3a10",
+  "n": 11,
+  "coerencia": 0.99
+ },
+ "k_hook_novo": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_02_deathslinger_p3a10",
+  "n": 6,
+  "coerencia": 0.992
+ },
+ "k_chase": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 30,
+  "coerencia": 0.994
+ },
+ "k_damage_generator": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 19,
+  "coerencia": 0.987
+ },
+ "k_destruction": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 18,
+  "coerencia": 0.992
+ },
+ "k_entity_summoned": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 4,
+  "coerencia": 0.994
+ },
+ "k_flashlight_evasion": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_03",
+  "n": 1,
+  "coerencia": 1.0
+ },
+ "k_hit": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 30,
+  "coerencia": 0.99
+ },
+ "k_hook": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_02_deathslinger_p3a10",
+  "n": 9,
+  "coerencia": 0.97
+ },
+ "k_kill": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_03",
+  "n": 1,
+  "coerencia": 1.0
+ },
+ "k_sacrifice": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 4,
+  "coerencia": 0.938
+ },
+ "k_survivor_found": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 30,
+  "coerencia": 0.992
+ },
+ "kp_detected_dispelled": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_03",
+  "n": 5,
+  "coerencia": 0.992
+ },
+ "kp_lethal_rush": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 30,
+  "coerencia": 0.993
+ },
+ "kp_lethal_rush_down": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 23,
+  "coerencia": 0.991
+ },
+ "kp_lethal_rush_hit": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 20,
+  "coerencia": 0.988
+ },
+ "kp_reeled_in": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_02_deathslinger_p3a10",
+  "n": 18,
+  "coerencia": 0.992
+ },
+ "kp_reeling": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_02_deathslinger_p3a10",
+  "n": 30,
+  "coerencia": 0.983
+ },
+ "kp_rush": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 30,
+  "coerencia": 0.992
+ },
+ "kp_rushing": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_01_blight",
+  "n": 30,
+  "coerencia": 0.996
+ },
+ "kp_sharpshooter": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_02_deathslinger_p3a10",
+  "n": 7,
+  "coerencia": 0.991
+ },
+ "kp_speared": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_02_deathslinger_p3a10",
+  "n": 23,
+  "coerencia": 0.994
+ },
+ "kp_take_flight": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_03",
+  "n": 9,
+  "coerencia": 0.995
+ },
+ "kp_use_cantrip": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_03",
+  "n": 12,
+  "coerencia": 0.981
+ },
+ "kp_violent_caster": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_03",
+  "n": 19,
+  "coerencia": 0.927
+ },
+ "kp_spectral_smash": {
+  "escala": 1.4,
+  "idioma": "en",
+  "origem": "killer_en_03",
+  "n": 4,
+  "coerencia": 0.962
+ }
+}
