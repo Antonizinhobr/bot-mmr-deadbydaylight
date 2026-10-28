@@ -63,8 +63,8 @@ São **dois programas**, hospedados separados:
 
 | App | Linguagem | Papel |
 |---|---|---|
-| **bot-mmr** (`index.js`) | Node.js | API pública. Confere o login do jogador, gera links de envio, recebe o vídeo, guarda no disco e entrega ao worker. Também mantém um bot do Discord online. |
-| **worker** (`worker.py`) | Python | Pega os vídeos da fila, analisa, calcula o MMR, grava no banco, posta no Discord e apaga o vídeo. |
+| **bot-mmr** (`index.js`, na raiz) | Node.js | API pública. Confere o login do jogador, gera links de envio, recebe o vídeo, guarda no disco e entrega ao worker. Também mantém um bot do Discord online. |
+| **worker** (`python-worker/worker.py`) | Python | Pega os vídeos da fila, analisa, calcula o MMR, grava no banco, posta no Discord e apaga o vídeo. |
 
 ---
 
@@ -123,29 +123,37 @@ São **dois programas**, hospedados separados:
 
 ## Estrutura do repositório
 
+O repositório é a própria pasta do **bot-mmr**. O worker fica numa subpasta, `python-worker/`:
+
 ```
-.
-├─ bot-mmr/                  ← app do site/API (Discloud: TYPE=site)
-│  ├─ index.js
-│  ├─ package.json
-│  ├─ discloud.config
-│  └─ .env.example           ← modelo (copie para .env e preencha)
-├─ worker/                   ← app do worker (Discloud: TYPE=bot)
-│  ├─ worker.py
-│  ├─ requirements.txt
-│  ├─ discloud.config
-│  ├─ .env.example
-│  ├─ templates/             ← imagens que a visão procura na HUD (não apague)
-│  │  ├─ sobrevivente/en|pt/score/   pop-ups de sobrevivente por idioma
-│  │  ├─ assassino/en|pt/score/      pop-ups de assassino por idioma (inclui poderes)
-│  │  ├─ comum/placar/               ícones do placar (escapou, sacrificado, bot...)
-│  │  └─ score/ acao/ status/ generator/ survivor/
-│  └─ tessdata/              ← idiomas do OCR (eng + por), usados automaticamente
+bot-mmr/
+├─ index.js                  ← API + bot do Discord (Discloud: TYPE=site)
+├─ package.json
+├─ package-lock.json
+├─ discloud.config           ← configuração do app do site
+├─ .env                      ← suas chaves do site (NÃO vai para o GitHub)
+├─ .env.example              ← modelo do .env do site (vai para o GitHub)
 ├─ .gitignore
-└─ README.md
+├─ README.md                 ← este arquivo
+├─ node_modules/             ← criado pelo npm install (NÃO vai para o GitHub)
+└─ python-worker/            ← o worker (Discloud: app separado, TYPE=bot)
+   ├─ worker.py
+   ├─ requirements.txt
+   ├─ discloud.config        ← configuração do app do worker
+   ├─ .env                   ← suas chaves do worker (NÃO vai para o GitHub)
+   ├─ .env.example           ← modelo do .env do worker (vai para o GitHub)
+   ├─ README.md              ← guia rápido do worker
+   ├─ templates/             ← imagens que a visão procura na HUD (não apague)
+   │  ├─ sobrevivente/en|pt/score/   pop-ups de sobrevivente por idioma
+   │  ├─ assassino/en|pt/score/      pop-ups de assassino por idioma (inclui poderes)
+   │  ├─ comum/placar/               ícones do placar (escapou, sacrificado, bot...)
+   │  └─ score/ acao/ status/ generator/ survivor/
+   └─ tessdata/              ← idiomas do OCR (eng + por), usados automaticamente
 ```
 
-> O `.env` **nunca** vai para o repositório. O `.gitignore` já bloqueia esse arquivo, a pasta `videos/`, a `_tmp/` e os logs.
+> O `.env` **nunca** vai para o repositório. O `.gitignore` bloqueia os dois `.env`, a `node_modules/`, a pasta `videos/`, a `_tmp/` do worker e os logs. Os `.env.example` vão no lugar deles, só com os nomes das variáveis.
+
+> O `worker.py` lê primeiro o `python-worker/.env` e depois o `.env` da pasta de cima (o do site). O que estiver nos dois vale o do worker. Assim, variáveis repetidas, como `WORKER_TOKEN` e `DISCORD_TOKEN`, podem ficar só no `.env` do site quando você roda tudo no mesmo PC. Na Discloud, os apps são separados, então cada um precisa do seu `.env` completo.
 
 ---
 
@@ -199,7 +207,7 @@ postgresql://USUARIO:SENHA@HOST:5432/NOME_DO_BANCO
 
 ### 4. `.env` do bot-mmr
 
-Copie `bot-mmr/.env.example` para `bot-mmr/.env`:
+Na raiz do projeto, copie `.env.example` para `.env`:
 
 | Variável | Obrigatória | Padrão | O que é |
 |---|---|---|---|
@@ -220,7 +228,7 @@ Copie `bot-mmr/.env.example` para `bot-mmr/.env`:
 
 ### 5. `.env` do worker
 
-Copie `worker/.env.example` para `worker/.env`. O worker também lê o `.env` da pasta de cima, se você preferir um só.
+Na pasta `python-worker`, copie `.env.example` para `.env`. Se rodar tudo no mesmo PC, o worker também aproveita o `.env` da raiz (veja a [estrutura](#estrutura-do-repositório)).
 
 **Essenciais**
 
@@ -273,7 +281,7 @@ São **dois apps** e, se quiser, um banco PostgreSQL da própria Discloud.
 
 ### App 1: bot-mmr (site)
 
-`bot-mmr/discloud.config`:
+`discloud.config` (na raiz):
 
 ```ini
 NAME=bot-mmr
@@ -288,12 +296,13 @@ AUTORESTART=true
 - `TYPE=site` com `ID` cria o domínio `https://seu-subdominio.discloud.dev`.
 - Site na Discloud pede **plano Platinum** e **512 MB de RAM** no mínimo.
 - A Discloud encaminha o domínio para a porta **8080**, que é a padrão do `index.js`. Não defina `PORT`.
-- Compacte o **conteúdo** da pasta `bot-mmr`, com `.env`, `index.js`, `package.json` e `discloud.config` na raiz do zip, e suba pelo painel.
+- Compacte o **conteúdo** da raiz do projeto, com `.env`, `index.js`, `package.json`, `package-lock.json` e `discloud.config` na raiz do zip, e suba pelo painel.
+- **Deixe de fora do zip a pasta `python-worker/` e a `node_modules/`.** O worker é outro app, e a Discloud instala as dependências do Node sozinha pelo `package.json`.
 - Os vídeos ficam em `videos/` dentro do app. Atualizar os arquivos não mexe nessa pasta, mas **apagar e recriar o app apaga** os vídeos que ainda estão na fila.
 
 ### App 2: worker
 
-`worker/discloud.config`:
+`python-worker/discloud.config`:
 
 ```ini
 NAME=dbd-coach-worker
@@ -308,7 +317,7 @@ AUTORESTART=true
 - `APT` instala o ffmpeg e o Tesseract. O português do OCR já vai na pasta `tessdata/`.
 - `RAM`: use o máximo que o plano deixar. Com 1024 MB roda 1 processo (mais devagar); com 2048 MB, 2 processos.
 - `AUTORESTART` só funciona do plano Platinum para cima.
-- Compacte o **conteúdo** da pasta `worker`, com `worker.py`, `discloud.config`, `.env`, `requirements.txt`, `templates/` e `tessdata/` na raiz do zip, e suba. A Discloud instala o `requirements.txt` sozinha.
+- Compacte o **conteúdo** da pasta `python-worker` (não a pasta em si), com `worker.py`, `discloud.config`, `.env`, `requirements.txt`, `templates/` e `tessdata/` na raiz do zip, e suba como um app novo. A Discloud instala o `requirements.txt` sozinha.
 - O worker não precisa de domínio: ele só faz conexões de saída (API, banco, Discord).
 
 No log do worker deve aparecer:
@@ -327,8 +336,9 @@ Crie um PostgreSQL no painel da Discloud e cole a URL no `DATABASE_URL` do worke
 
 ### bot-mmr
 
+Na raiz do projeto:
+
 ```bash
-cd bot-mmr
 npm install
 cp .env.example .env      # preencha
 node index.js
@@ -338,8 +348,9 @@ node index.js
 
 **Windows**
 1. Instale o [Python 3.10+](https://www.python.org/downloads/) (marque *Add to PATH*), o [ffmpeg](https://www.gyan.dev/ffmpeg/builds/) (no PATH) e o [Tesseract](https://github.com/UB-Mannheim/tesseract/wiki).
-2. Na pasta `worker`:
+2. Na pasta `python-worker`:
    ```bat
+   cd python-worker
    pip install -r requirements.txt
    copy .env.example .env
    python worker.py --checar
@@ -349,7 +360,7 @@ node index.js
 **Ubuntu / VPS**
 ```bash
 sudo apt install -y python3-pip ffmpeg tesseract-ocr tesseract-ocr-por libgl1
-cd worker
+cd python-worker
 pip install -r requirements.txt     # em sistemas novos: --break-system-packages ou um venv
 cp .env.example .env                # preencha
 python3 worker.py --checar
