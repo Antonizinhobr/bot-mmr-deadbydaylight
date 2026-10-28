@@ -663,7 +663,7 @@ Cortar leva de 30 s a alguns minutos por partida, dependendo da CPU. O vídeo or
 
 | Sintoma | Causa provável | Solução |
 |---|---|---|
-| `Network is unreachable` / IPv6 ao conectar no banco | Endereço direto do Supabase (só IPv6) | Use a URL do **Session pooler** |
+| `Network is unreachable` / IPv6 ao conectar no banco | Endereço direto do banco de dados (só IPv6) | Use a URL do **Session pooler** |
 | `password authentication failed` | Senha errada ou com caracteres especiais | Troque por uma senha só com letras e números ou faça URL-encode |
 | Navegador: *blocked by CORS policy* no `PUT` do vídeo | O proxy da hospedagem recusou um arquivo grande enviado de uma vez | Use o envio em pedaços (`&inicio=`) da função acima |
 | Navegador: CORS no `gerar-link` | Origem fora do `ALLOWED_ORIGINS` | Adicione o domínio do site, com `https://` e sem barra no fim |
